@@ -18,17 +18,6 @@ CodeFolio is a personal coding portfolio and analytics platform built with Djang
 - **APIs:** Codeforces API, custom data endpoints  
 - **Hosting:** (add here if you plan to host on Heroku, Vercel, etc.)
 
-## 📂 Project Structure
-
-```
-CodeFolio/
-├── dashboard/          # Django app for user dashboard
-├── viz/               # Visualization features (charts, heatmaps)
-├── static/            # Static files (JS, CSS)
-├── templates/         # HTML templates
-└── manage.py          # Django entry point
-```
-
 ## ⚙️ Installation
 1. Clone the repo:
    ```bash
