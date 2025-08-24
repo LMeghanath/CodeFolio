@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .dashboard {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Main Circle */
+    .main-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: conic-gradient(#4caf50 40%, #ff9800 30%, #f44336 30%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+    }
+
+    .main-circle::after {
+      content: "Total Solved";
+      position: absolute;
+      bottom: -25px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Bar Graph Section */
+    .bar-graph-container {
+      margin-top: 60px;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
+    }
+
+    .bar-graph {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      transition: max-height 0.3s ease;
+    }
+
+    .bar {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40px;
+    }
+
+    .bar .fill {
+      width: 100%;
+      background: #4a90e2;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .bar-label {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #444;
+      text-align: center;
+    }
+
+    /* Show More Button */
+    .show-more-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: #4a90e2;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- Main Circle -->
+    <div class="main-circle">100</div>
+
+    <!-- Topic-wise bar chart -->
+    <div class="bar-graph-container">
+      <div class="bar-graph" id="barGraph">
+        <!-- Visible bars -->
+        <div class="bar"><div class="fill" style="height: 80px;"></div><div class="bar-label">Array</div></div>
+        <div class="bar"><div class="fill" style="height: 120px;"></div><div class="bar-label">DP</div></div>
+        <div class="bar"><div class="fill" style="height: 60px;"></div><div class="bar-label">Graph</div></div>
+        <div class="bar"><div class="fill" style="height: 100px;"></div><div class="bar-label">Tree</div></div>
+        <!-- Hidden bars -->
+        <div class="bar hidden extra"><div class="fill" style="height: 90px;"></div><div class="bar-label">Greedy</div></div>
+        <div class="bar hidden extra"><div class="fill" style="height: 70px;"></div><div class="bar-label">Binary</div></div>
+        <div class="bar hidden extra"><div class="fill" style="height: 110px;"></div><div class="bar-label">Recursion</div></div>
+        <div class="bar hidden extra"><div class="fill" style="height: 95px;"></div><div class="bar-label">Backtrack</div></div>
+      </div>
+    </div>
+
+    <!-- Show More Button -->
+    <button class="show-more-btn" onclick="showMore()">Show More</button>
+  </div>
+
+  <script>
+    function showMore() {
+      const extras = document.querySelectorAll('.extra');
+      extras.forEach(el => el.classList.remove('hidden'));
+      document.querySelector('.show-more-btn').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
