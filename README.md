@@ -59,7 +59,30 @@ CodeFolio/
    ```
 
 ## 📊 Screenshots
-*Add some dashboard screenshots here once you push your project.*
+
+### 🏠 Landing Page
+![CodeFolio Landing Page](screenshots/landing-page.png)
+*Main landing page showcasing the platform's core features and value proposition*
+
+### ⚙️ Profile Settings
+![Profile Settings](screenshots/profile-settings.png)
+*User profile management with platform linking and verification system*
+
+### 🔗 Platform Integration
+![Platform Linking](screenshots/platform-linking.png)
+*Connect and verify your coding profiles from multiple platforms*
+
+### 📈 Streak Analysis
+![Codeforces Rating Chart](screenshots/streak.png)
+*Shows the cumilative streak across the platforms*
+
+### 📈 Rating Analytics
+![Codeforces Rating Chart](screenshots/rating-chart.png)
+*Interactive Codeforces rating progression chart with historical data*
+
+### 📊 Problem Analysis
+![Problem Statistics](screenshots/problem-stats.png)
+*Detailed breakdown of problems solved by topic and difficulty*
 
 ## 📌 Roadmap
 * Add more platforms (LeetCode, CodeChef, HackerRank)
