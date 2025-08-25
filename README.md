@@ -87,4 +87,4 @@ This project is licensed under the MIT License.
 ## 👤 Author
 **L. Meghanath Sri Satyanarayana**
 * 🌐 GitHub
-* 📧 Add your email here if you want
+* 📧 lakku.meghanath@gmail.com
