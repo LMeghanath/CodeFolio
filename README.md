@@ -16,7 +16,6 @@ CodeFolio is a personal coding portfolio and analytics platform built with Djang
 - **Frontend:** HTML, CSS, JavaScript, Chart.js  
 - **Database:** Firebase Firestore  
 - **APIs:** Codeforces API, custom data endpoints  
-- **Hosting:** (add here if you plan to host on Heroku, Vercel, etc.)
 
 ## ⚙️ Installation
 1. Clone the repo:
